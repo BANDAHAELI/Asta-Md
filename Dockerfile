@@ -16,9 +16,9 @@
  
 
 FROM quay.io/suhailtechinfo/suhail-v2
-RUN git clone https://github.com/BANDAHAELI/Asta-Md  /root/smdd
+RUN git clone https://github.com/BANDAHAELI/Asta-Md  /root/Astropeda
 RUN rm -rf /root/smdd/.git
-WORKDIR /root/smdd
+WORKDIR /root/Astropeda
 RUN npm install || yarn install
 EXPOSE 8000
 CMD ["npm","start" ] 
