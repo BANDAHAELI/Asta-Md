@@ -4,6 +4,7 @@ if (fs.existsSync(".env"))
   require("dotenv").config({ path: __dirname + "/.env" });
 global.audio = "";
 global.video = "";
+global.IS_ASTA = true;
 global.port = process.env.PORT;
 global.appUrl = process.env.APP_URL || "";
 global.email = "astromedia0010@gmail.com";
